@@ -29,26 +29,24 @@ Add the Alke.js script after the GSAP script in the **Custom Code** section of y
 <script src="https://cdn.jsdelivr.net/gh/yourusername/alke.js@latest/alke.js"></script>
 ```
 
-### Usage
+## Usage
 
 Simply add the necessary alke-* attributes to your HTML elements to apply animations.
 
-#### Basic Example
+### Basic Example
 ```html
 <div alke-animation="fade-up" alke-duration="1" alke-delay="0.5"></div>
 ```
 
-#### Staggered Animation Example
+### Staggered Animation Example
 ```html
 <div alke-type="stagger" alke-stagger="0.2" alke-distance="50px" alke-duration="1"></div>
 ```
 
-#### Disabling Animations on Small Screens
+### Disabling Animations on Small Screens
 ```html
 <div alke-animation="fade-left" alke-duration="2" alke-disabled="991"></div>
 ```
-
-### Available Attributes
 
 ## Available Attributes
 
@@ -65,11 +63,11 @@ Simply add the necessary alke-* attributes to your HTML elements to apply animat
 | `alke-start`    | `top bottom`  | Scroll position at which the animation starts. Format: `elementPosition viewportPosition`. | `<div alke-start="top 50%"></div>`                            |
 | `alke-disabled` | N/A           | Disables the animation when the screen width is below the specified pixel value. | `<div alke-disabled="991"></div>`                             |
 
-### License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Acknowledgments
+## Acknowledgments
 
 	•	GSAP (GreenSock Animation Platform) - The powerful animation library that Alke.js is built upon.
 
