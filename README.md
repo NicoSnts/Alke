@@ -7,7 +7,7 @@
 
 With Alke.js, you can quickly create smooth, responsive animations using simple HTML attributes—no need for complex coding. Whether you want to add fade-in effects, staggered animations, or other dynamic visuals, Alke.js has you covered.
 
-[Watch the demo video](https://github.com/NicoSnts/alke/blob/3ecf18de2d8f6374db9ffe906862f096dfbad007/Alke.mp4?raw=true)
+![Alke.js Demo](https://github.com/NicoSnts/alke/blob/64a0f5d53a6b5e8bee1d864635139f46f8226fc0/Alke-demo.gif)
 
 ### Key Features:
 
