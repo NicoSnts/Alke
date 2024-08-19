@@ -1,13 +1,18 @@
 # Alke.js
 
-Alke.js is a lightweight, GSAP-powered animation library that enables smooth, responsive animations via simple HTML attributes. Easily add fade-in effects, staggered animations, and more. Fully customizable with support for screen size-based disabling, making it perfect for modern, dynamic web projects.
+**Alke.js** is a lightweight, open-source animation library powered by GSAP, designed specifically for easy use within Webflow projects.
 
-## Features
-- **Attribute-Based Animations:** Define animations directly in your HTML using intuitive attributes like `alke-animation`, `alke-duration`, and more.
-- **Staggered Animations:** Easily apply staggered animations to child elements for sophisticated effects.
-- **Responsive Control:** Disable animations on smaller screens using the `alke-disabled` attribute.
-- **Customizable:** Control the distance, duration, delay, and other properties of your animations with ease.
-- **Built on GSAP:** Leverages the power of GSAP for smooth and performant animations.
+With Alke.js, you can quickly create smooth, responsive animations using simple HTML attributes—no need for complex coding. Whether you want to add fade-in effects, staggered animations, or other dynamic visuals, Alke.js has you covered.
+
+### Key Features:
+
+- **Easy to Use:** Add animations directly in your Webflow project using straightforward HTML attributes.
+  
+- **Highly Customizable:** Fine-tune animations to fit your design needs with flexible options for duration, delay, and more.
+
+- **Responsive:** Built-in support for screen size-based disabling ensures your animations look great on any device.
+
+Alke.js is perfect for Webflow designers and developers who want to enhance their projects with powerful animations, all while keeping the workflow simple and accessible.
 
 ## Installation
 
@@ -71,7 +76,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-	•	GSAP (GreenSock Animation Platform) - The powerful animation library that Alke.js is built upon.
+GSAP (GreenSock Animation Platform) - The powerful animation library that Alke.js is built upon.
 
 ### Support
 
