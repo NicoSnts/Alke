@@ -1,5 +1,7 @@
 # Alke.js
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/yourusername/yourrepository)
+
 **Alke.js** is a lightweight, open-source animation library powered by GSAP, designed specifically for easy use within Webflow projects.
 
 With Alke.js, you can quickly create smooth, responsive animations using simple HTML attributes—no need for complex coding. Whether you want to add fade-in effects, staggered animations, or other dynamic visuals, Alke.js has you covered.
