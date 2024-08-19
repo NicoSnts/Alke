@@ -50,18 +50,20 @@ Simply add the necessary alke-* attributes to your HTML elements to apply animat
 
 ## Available Attributes
 
-| Attribute       | Default Value | Description                                                                 | Example                                                      |
-|-----------------|---------------|-----------------------------------------------------------------------------|--------------------------------------------------------------|
-| `alke-animation`| `fade-in`     | Type of animation. Options: `fade-up`, `fade-down`, `fade-left`, `fade-right`, `fade-in` | `<div alke-animation="fade-up"></div>`                        |
-| `alke-blur`     | `0px`         | Initial blur amount in pixels. The blur fades out during the animation.      | `<div alke-animation="fade-left" alke-blur="10px"></div>`     |
-| `alke-type`     | `standard`    | Animation type. Options: `standard`, `stagger`. `stagger` animates child elements sequentially. | `<div alke-type="stagger" alke-stagger="0.2"></div>`          |
-| `alke-stagger`  | `0.1s`        | Time delay between each child element's animation in a `stagger` animation.  | `<div alke-stagger="0.3s"></div>`                             |
-| `alke-distance` | `20%`         | Distance for the initial position of the element before the animation starts. Can be in `px` or `%`. | `<div alke-animation="fade-right" alke-distance="50px"></div>`|
-| `alke-duration` | `1s`          | Duration of the animation in seconds.                                        | `<div alke-animation="fade-up" alke-duration="2"></div>`      |
-| `alke-delay`    | `0s`          | Delay before the animation starts, in seconds.                               | `<div alke-animation="fade-down" alke-delay="0.5"></div>`     |
-| `alke-infinite` | N/A           | If present, the animation restarts each time the element re-enters the viewport. | `<div alke-animation="fade-left" alke-infinite></div>`        |
-| `alke-start`    | `top bottom`  | Scroll position at which the animation starts. Format: `elementPosition viewportPosition`. | `<div alke-start="top 50%"></div>`                            |
-| `alke-disabled` | N/A           | Disables the animation when the screen width is below the specified pixel value. | `<div alke-disabled="991"></div>`                             |
+## Available Attributes
+
+| Attribute       | Default Value | Description                                                                 | Example                                                      | Optional/Required |
+|-----------------|---------------|-----------------------------------------------------------------------------|--------------------------------------------------------------|-------------------|
+| `alke-animation`| `fade-in`     | Type of animation. Options: `fade-up`, `fade-down`, `fade-left`, `fade-right`, `fade-in`. | `<div alke-animation="fade-up"></div>`                        | Required          |
+| `alke-blur`     | `0px`         | Initial blur amount in pixels. The blur fades out during the animation.      | `<div alke-animation="fade-left" alke-blur="10px"></div>`     | Optional          |
+| `alke-type`     | `standard`    | Animation type. Options: `standard`, `stagger`. `stagger` animates child elements sequentially. | `<div alke-type="stagger" alke-stagger="0.2"></div>`          | Optional          |
+| `alke-stagger`  | `0.1`         | Time delay between each child element's animation in a `stagger` animation. Only a numeric value (in seconds).  | `<div alke-type="stagger" alke-stagger="0.3"></div>`          | Optional          |
+| `alke-distance` | `20%`         | Distance for the initial position of the element before the animation starts. Can be in `px` or `%`. | `<div alke-animation="fade-right" alke-distance="50px"></div>`| Optional          |
+| `alke-duration` | `1`           | Duration of the animation in seconds.                                        | `<div alke-animation="fade-up" alke-duration="2"></div>`      | Optional          |
+| `alke-delay`    | `0`           | Delay before the animation starts, in seconds.                               | `<div alke-animation="fade-down" alke-delay="0.5"></div>`     | Optional          |
+| `alke-infinite` | N/A           | If present, the animation restarts each time the element re-enters the viewport. | `<div alke-animation="fade-left" alke-infinite></div>`        | Optional          |
+| `alke-start`    | `top bottom`  | Scroll position at which the animation starts. Format: `elementPosition viewportPosition`. | `<div alke-start="top 50%"></div>`                            | Optional          |
+| `alke-disabled` | N/A           | Disables the animation when the screen width is below the specified pixel value. | `<div alke-disabled="991"></div>`                             | Optional          |
 
 ## License
 
