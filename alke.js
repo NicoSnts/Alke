@@ -1,23 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
     const alkeElements = document.querySelectorAll('[alke-animation]');
-    
+    const debugLog = document.getElementById('alke-debug-log');
+
+    const logDebug = (message) => {
+        const logEntry = document.createElement('div');
+        logEntry.textContent = message;
+        debugLog.appendChild(logEntry);
+    };
+
     const applyAnimations = () => {
         alkeElements.forEach(el => {
             const animationType = el.getAttribute('alke-animation') || 'fade-in';
             const blurAmount = el.getAttribute('alke-blur');
             const type = el.getAttribute('alke-type') || 'standard';
-            const staggerTime = parseFloat(el.getAttribute('alke-stagger')) || 0.1; // Now correctly assumes numeric value
-            const distance = el.getAttribute('alke-distance') || '20%'; // Default distance set to 20%
+            const staggerTime = parseFloat(el.getAttribute('alke-stagger')) || 0.1;
+            const distance = el.getAttribute('alke-distance') || '20%';
             const duration = parseFloat(el.getAttribute('alke-duration')) || 1;
             const delay = parseFloat(el.getAttribute('alke-delay')) || 0;
             const infinite = el.hasAttribute('alke-infinite');
             const startTrigger = el.getAttribute('alke-start') || 'top bottom';
             const disableBelow = parseInt(el.getAttribute('alke-disabled'), 10);
 
+            logDebug(`Setting up animation for element: ${el.tagName}#${el.id}`);
+
             // Check if the animation should be disabled on small screens
             const disableAnimation = disableBelow && window.innerWidth <= disableBelow;
 
             if (disableAnimation) {
+                logDebug(`Animation disabled on element: ${el.tagName}#${el.id} due to screen size.`);
                 // If disabled, set the element to its final state without animation
                 gsap.set(el, {
                     opacity: 1,
@@ -26,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     filter: 'none',
                 });
                 // Remove any existing ScrollTrigger to avoid unexpected behavior
-                ScrollTrigger.getById(el).kill();
+                ScrollTrigger.getById(el)?.kill();
                 return; // Skip applying the animation
             }
 
@@ -49,13 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const triggerAnimation = () => {
-                if (type === 'stagger' && el.children.length > 0) {
-                    gsap.to([...el.children], {
-                        ...animationConfig,
-                        stagger: staggerTime // Using the numeric staggerTime value
-                    });
-                } else {
-                    gsap.to(el, animationConfig);
+                try {
+                    if (type === 'stagger' && el.children.length > 0) {
+                        gsap.to([...el.children], {
+                            ...animationConfig,
+                            stagger: staggerTime // Using the numeric staggerTime value
+                        });
+                    } else {
+                        gsap.to(el, animationConfig);
+                    }
+                    logDebug(`Animation triggered for element: ${el.tagName}#${el.id}`);
+                } catch (error) {
+                    logDebug(`Error animating element: ${el.tagName}#${el.id} - ${error.message}`);
                 }
             };
 
@@ -87,10 +102,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Apply animations on load
     applyAnimations();
-
-    // Reapply animations on resize
-    window.addEventListener('resize', () => {
-        applyAnimations();
-        ScrollTrigger.refresh(); // Refresh ScrollTrigger to apply or remove animations dynamically on resize
-    });
 });
