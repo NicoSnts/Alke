@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const alkeElements = document.querySelectorAll('[alke-animation]');
-
     
     const applyAnimations = () => {
         alkeElements.forEach(el => {
