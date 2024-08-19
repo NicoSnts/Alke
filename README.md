@@ -7,6 +7,11 @@
 
 With Alke.js, you can quickly create smooth, responsive animations using simple HTML attributes—no need for complex coding. Whether you want to add fade-in effects, staggered animations, or other dynamic visuals, Alke.js has you covered.
 
+<video width="600" controls>
+  <source src="https://github.com/NicoSnts/alke/blob/3ecf18de2d8f6374db9ffe906862f096dfbad007/Alke.mp4?raw=true" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ### Key Features:
 
 - **Easy to Use:** Add animations directly in your Webflow project using straightforward HTML attributes.
