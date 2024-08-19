@@ -36,7 +36,7 @@ Add the following script in the **Custom Code** section of your Webflow project 
 Add the Alke.js script after the GSAP script in the **Custom Code** section of your Webflow project or your page setting `</body>` tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/yourusername/alke.js@latest/alke.js"></script>
+<script src="https://alke-39d.pages.dev/alke.min.js"></script>
 ```
 
 ## Usage
