@@ -1,6 +1,6 @@
 # Alke.js
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/NicoSnts/alke)  ![Static Badge](https://img.shields.io/badge/Version-1.0.0-blue)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/NicoSnts/alke)  ![Static Badge](https://img.shields.io/badge/Version-1.0.1-blue)
 
 
 **Alke.js** is a lightweight, open-source animation library powered by GSAP, designed specifically for easy use within Webflow projects.
@@ -73,7 +73,7 @@ Simply add the necessary alke-* attributes to your HTML elements to apply animat
 | `alke-delay`    | `0`           | Delay before the animation starts, in seconds.                               | `<div alke-animation="fade-down" alke-delay="0.5"></div>`     | Optional          |
 | `alke-infinite` | N/A           | If present, the animation restarts each time the element re-enters the viewport. | `<div alke-animation="fade-left" alke-infinite></div>`        | Optional          |
 | `alke-start`    | `top bottom`  | Scroll position at which the animation starts. Format: `elementPosition viewportPosition`. | `<div alke-start="top 50%"></div>`                            | Optional          |
-| `alke-disabled` | N/A           | Disables the animation when the screen width is below the specified pixel value. | `<div alke-disabled="991"></div>`                             | Optional          |
+| `alke-disabled` | N/A           | Not available (Dev. in progress) - Disables the animation when the screen width is below the specified pixel value. | `<div alke-disabled="991"></div>`                             | Optional          |
 
 ## License
 
