@@ -41,9 +41,23 @@ Add the Alke.js script after the GSAP script in the **Custom Code** section of y
 
 ## Usage
 
-Simply add the necessary alke-* attributes to your HTML elements to apply animations.
+### With Webflow
 
-### Basic Example
+Add the necessary `alke-*` attributes to your element using the "Custom attributes" option available on the right panel (Settings tab) of any element on your site.
+
+![Webflow Custom Attributes](https://github.com/NicoSnts/Alke/blob/69712f32660023f07c90fbe18438bfb4807d5f17/custom-attributes.png) 
+
+### Using HTML Attributes
+
+Add the necessary `alke-*` attributes to your HTML elements to apply animations.
+
+```html
+<div alke-animation="fade-up" alke-duration="1" alke-delay="0.5"></div>
+```
+
+## Exemples 
+
+#### Basic Example
 ```html
 <div alke-animation="fade-up" alke-duration="1" alke-delay="0.5"></div>
 ```
