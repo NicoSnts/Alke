@@ -23,12 +23,13 @@ Alke.js is perfect for Webflow designers and developers who want to enhance thei
 
 To use Alke.js in your Webflow project, you need to include both the GSAP library and Alke.js.
 
-### Step 1: Include GSAP
+### Step 1: Include GSAP with ScrollTrigger
 
 Add the following script in the **Custom Code** section of your Webflow project or directly in the `<head>` of your page setting:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 ```
 
 ### Step 2: Include Alke.js
